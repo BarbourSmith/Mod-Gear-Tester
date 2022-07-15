@@ -8,18 +8,146 @@
     "topLevel": true,
     "allAtoms": [
         {
+            "atomType": "GitHubMolecule",
+            "name": "Involute Gear",
+            "x": 0.22023809523809526,
+            "y": 0.43209876543209874,
+            "uniqueID": 656136,
+            "projectID": "307507544",
+            "ioValues": [
+                {
+                    "name": "Number Of Teeth",
+                    "ioValue": 24
+                },
+                {
+                    "name": "Circular Pitch",
+                    "ioValue": 4
+                },
+                {
+                    "name": "Pressure Angle",
+                    "ioValue": 20
+                },
+                {
+                    "name": "Clearance",
+                    "ioValue": 0
+                }
+            ],
+            "simplify": false
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.44841269841269843,
+            "y": 0.29012345679012347,
+            "uniqueID": 533235,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 39
+                }
+            ]
+        },
+        {
+            "atomType": "Difference",
+            "name": "Difference",
+            "x": 0.39351851851851855,
+            "y": 0.5493827160493827,
+            "uniqueID": 750666,
+            "ioValues": [
+                {
+                    "name": "geometry2",
+                    "ioValue": "source/655648/903622Circle"
+                },
+                {
+                    "name": "geometry1",
+                    "ioValue": "source/655648/656136GitHubMolecule"
+                }
+            ]
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.25,
+            "y": 0.7407407407407407,
+            "uniqueID": 903622,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 8.5
+                }
+            ]
+        },
+        {
+            "atomType": "Assembly",
+            "name": "Assembly",
+            "x": 0.6316137566137566,
+            "y": 0.5555555555555556,
+            "uniqueID": 833748,
+            "ioValues": [
+                {
+                    "name": "3D shape 1",
+                    "ioValue": "source/655648/533235Circle"
+                },
+                {
+                    "name": "3D shape 2",
+                    "ioValue": "source/655648/750666Difference"
+                }
+            ]
+        },
+        {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9867724867724867,
             "y": 0.5,
             "uniqueID": 844090,
-            "ioValues": []
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "source/655648/833748Assembly"
+                }
+            ]
         }
     ],
-    "allConnectors": [],
+    "allConnectors": [
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "geometry1",
+            "ap2Primary": false,
+            "ap1ID": 656136,
+            "ap2ID": 750666
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "3D shape 1",
+            "ap2Primary": false,
+            "ap1ID": 533235,
+            "ap2ID": 833748
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "3D shape 2",
+            "ap2Primary": false,
+            "ap1ID": 750666,
+            "ap2ID": 833748
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry2",
+            "ap2Primary": false,
+            "ap1ID": 903622,
+            "ap2ID": 750666
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 833748,
+            "ap2ID": 844090
+        }
+    ],
     "fileTypeVersion": 1,
     "simplify": false,
     "unitsIndex": 0,
     "filetypeVersion": 1,
-    "circleSegmentSize": 2
+    "circleSegmentSize": "0.051"
 }

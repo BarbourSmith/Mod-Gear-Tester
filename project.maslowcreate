@@ -10,8 +10,8 @@
         {
             "atomType": "GitHubMolecule",
             "name": "Involute Gear",
-            "x": 0.2189153439153439,
-            "y": 0.4351851851851851,
+            "x": 0.1593915343915344,
+            "y": 0.2654320987654321,
             "uniqueID": 656136,
             "projectID": "307507544",
             "ioValues": [
@@ -35,23 +35,10 @@
             "simplify": false
         },
         {
-            "atomType": "Circle",
-            "name": "Circle",
-            "x": 0.4497354497354497,
-            "y": 0.25308641975308643,
-            "uniqueID": 533235,
-            "ioValues": [
-                {
-                    "name": "diameter",
-                    "ioValue": 36
-                }
-            ]
-        },
-        {
             "atomType": "Difference",
             "name": "Difference",
-            "x": 0.39351851851851855,
-            "y": 0.5524691358024691,
+            "x": 0.28240740740740744,
+            "y": 0.3395061728395062,
             "uniqueID": 750666,
             "ioValues": [
                 {
@@ -61,6 +48,19 @@
                 {
                     "name": "geometry1",
                     "ioValue": "source/655648/656136GitHubMolecule"
+                }
+            ]
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.4391534391534392,
+            "y": 0.1234567901234568,
+            "uniqueID": 533235,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 36
                 }
             ]
         },
@@ -84,8 +84,8 @@
         {
             "atomType": "Circle",
             "name": "Circle",
-            "x": 0.25,
-            "y": 0.7407407407407407,
+            "x": 0.13624338624338625,
+            "y": 0.7098765432098765,
             "uniqueID": 903622,
             "ioValues": [
                 {
@@ -148,13 +148,6 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "3D shape 1",
-            "ap2Primary": false,
-            "ap1ID": 533235,
-            "ap2ID": 833748
-        },
-        {
-            "ap1Name": "geometry",
             "ap2Name": "3D shape 2",
             "ap2Primary": false,
             "ap1ID": 750666,
@@ -166,6 +159,13 @@
             "ap2Primary": true,
             "ap1ID": 750666,
             "ap2ID": 901610
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "3D shape 1",
+            "ap2Primary": false,
+            "ap1ID": 533235,
+            "ap2ID": 833748
         },
         {
             "ap1Name": "geometry",
